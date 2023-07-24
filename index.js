@@ -5,7 +5,7 @@ const DECREMENT = 'DECREMENT';
 const ADD_USER = 'ADD_USER'
 
 // state
-const InitialCounterState = {
+const initialCounterState = {
     count: 0,
     
 }
@@ -30,7 +30,7 @@ const decrementCounter = () => {
 // DECREMENT
 
 // create Reducer for counter
-const counterReducer = (state={InitialCounterState}, action) => {
+const counterReducer = (state= initialCounterState, action) => {
 
     switch (action.type) {
         case INCREMENT:
